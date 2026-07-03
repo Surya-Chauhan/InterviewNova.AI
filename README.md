@@ -29,7 +29,18 @@
 ## 📸 Screenshots
 
 
-> <img width="1890" height="904" alt="InterviewNova Dashboard" src="https://github.com/user-attachments/assets/9b746448-a84e-4bea-9e19-67e4c6c1b203" />
+<img width="1612" height="812" alt="Screenshot 2026-06-30 200220" src="https://github.com/user-attachments/assets/86cf8fdb-edab-47e7-9beb-6416b2dc8b70" />
+
+<img width="1900" height="886" alt="Screenshot 2026-07-01 201042" src="https://github.com/user-attachments/assets/90029f55-d523-437d-83e7-44afdff2a3da" />
+
+<img width="1845" height="881" alt="Screenshot 2026-07-03 114257" src="https://github.com/user-attachments/assets/f9dee55c-75e4-4cc4-bcfe-6ce3713262d4" />
+
+<img width="1831" height="881" alt="Screenshot 2026-07-03 114418" src="https://github.com/user-attachments/assets/6e09743d-65b7-46ba-8c82-7f6699051ec4" />
+
+<img width="1893" height="858" alt="Screenshot 2026-07-03 160216" src="https://github.com/user-attachments/assets/1f7b8696-92cc-4393-a769-facae106dbc1" />
+
+
+
 
 
 ---
