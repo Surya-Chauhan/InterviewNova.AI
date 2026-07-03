@@ -7,7 +7,7 @@
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-4F46E5?style=for-the-badge)](https://interviewnova-client.onrender.com)
 [![GitHub Stars](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&logo=github&color=FFD700)](https://github.com/Surya-Chauhan/InterviewNova.AI/stargazers)
 [![GitHub Forks](https://img.shields.io/github/forks/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&logo=github&color=0EA5E9)](https://github.com/Surya-Chauhan/InterviewNova.AI/network/members)
-[![License](https://img.shields.io/github/license/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&color=22C55E)](https://github.com/Surya-Chauhan/InterviewNova.AI/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](https://github.com/Surya-Chauhan/InterviewNova.AI/blob/main/LICENSE)
 <br/>
 
 <img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" />
