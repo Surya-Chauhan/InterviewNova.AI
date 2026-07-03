@@ -5,9 +5,9 @@
 <p><strong>AI-Powered Mock Interview Platform for Students & Job Seekers</strong></p>
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-4F46E5?style=for-the-badge)](https://interviewnova-client.onrender.com)
-[![GitHub Stars](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova?style=for-the-badge&color=FFD700)](https://github.com/Surya-Chauhan/InterviewNova/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Surya-Chauhan/InterviewNova?style=for-the-badge&color=0EA5E9)](https://github.com/Surya-Chauhan/InterviewNova/forks)
-[![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova?style=for-the-badge&logo=github&color=FFD700)](https://github.com/Surya-Chauhan/InterviewNova/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Surya-Chauhan/InterviewNova?style=for-the-badge&logo=github&color=0EA5E9)](https://github.com/Surya-Chauhan/InterviewNova/network/members)
+[![License](https://img.shields.io/github/license/Surya-Chauhan/InterviewNova?style=for-the-badge&color=22C55E)](https://github.com/Surya-Chauhan/InterviewNova/blob/main/LICENSE)
 
 <br/>
 
@@ -26,19 +26,77 @@
 
 ---
 
-## 📸 Screenshots
+# 📸 Application Preview
 
+---
 
-<img width="1612" height="812" alt="Screenshot 2026-06-30 200220" src="https://github.com/user-attachments/assets/86cf8fdb-edab-47e7-9beb-6416b2dc8b70" />
+## 🏠 Landing Page
 
-<img width="1900" height="886" alt="Screenshot 2026-07-01 201042" src="https://github.com/user-attachments/assets/90029f55-d523-437d-83e7-44afdff2a3da" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a549a130-e6b0-4fd4-b986-da4e18bd7a43" alt="InterviewNova Landing Page" width="100%">
+</p>
 
-<img width="1845" height="881" alt="Screenshot 2026-07-03 114257" src="https://github.com/user-attachments/assets/f9dee55c-75e4-4cc4-bcfe-6ce3713262d4" />
+<p align="center">
+  <em>Modern landing page showcasing InterviewNova's AI-powered interview preparation platform.</em>
+</p>
 
-<img width="1831" height="881" alt="Screenshot 2026-07-03 114418" src="https://github.com/user-attachments/assets/6e09743d-65b7-46ba-8c82-7f6699051ec4" />
+<br><br>
 
-<img width="1893" height="858" alt="Screenshot 2026-07-03 160216" src="https://github.com/user-attachments/assets/1f7b8696-92cc-4393-a769-facae106dbc1" />
+---
 
+## 📊 Dashboard
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/90029f55-d523-437d-83e7-44afdff2a3da" alt="InterviewNova Dashboard" width="100%">
+</p>
+
+<p align="center">
+  <em>Personalized dashboard to manage interviews, track progress, and access AI-powered insights.</em>
+</p>
+
+<br><br>
+
+---
+
+## 🎤 AI Interview Session
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f9dee55c-75e4-4cc4-bcfe-6ce3713262d4" alt="AI Interview Session" width="100%">
+</p>
+
+<p align="center">
+  <em>Interactive AI interview experience with role-specific questions and real-time responses.</em>
+</p>
+
+<br><br>
+
+---
+
+## 📈 AI Performance Report
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e09743d-65b7-46ba-8c82-7f6699051ec4" alt="AI Performance Report" width="100%">
+</p>
+
+<p align="center">
+  <em>Comprehensive AI-generated performance report with scores, strengths, and improvement suggestions.</em>
+</p>
+
+<br><br>
+
+---
+
+## 💳 Pricing & Credits
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1f7b8696-92cc-4393-a769-facae106dbc1" alt="Pricing and Credits" width="100%">
+</p>
+
+<p align="center">
+  <em>Flexible credit-based pricing with secure payment integration for uninterrupted interview practice.</em>
+</p>
+
+---
 
 
 
