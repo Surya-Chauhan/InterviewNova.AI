@@ -164,7 +164,7 @@
 ### ☁️ Deployment
 | Service | Purpose |
 |---|---|
-| Vercel (Frontend) | Client hosting |
+| Render (Frontend) | Client hosting |
 | Render (Backend) | API server hosting |
 | MongoDB Atlas | Cloud database |
 
