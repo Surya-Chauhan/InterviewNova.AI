@@ -1,30 +1,52 @@
-import express from "express"
-import dotenv from "dotenv"
-import connectDb from "./config/connectDb.js"
-import cookieParser from "cookie-parser"
-dotenv.config()
-import cors from "cors"
-import authRouter from "./routes/auth.route.js"
-import userRouter from "./routes/user.route.js"
-import interviewRouter from "./routes/interview.route.js"
-import paymentRouter from "./routes/payment.route.js"
+import express from "express";
+import dotenv from "dotenv";
+import cors from "cors";
 
-const app = express()
-app.use(cors({
-    origin : process.env.CLIENT_BASE_URL,
-    credentials:true
-}))
+import connectDb from "./config/connectDb.js";
 
-app.use(express.json())
-app.use(cookieParser())
+import authRouter from "./routes/auth.route.js";
+import userRouter from "./routes/user.route.js";
+import interviewRouter from "./routes/interview.route.js";
+import paymentRouter from "./routes/payment.route.js";
 
-app.use("/api/auth" , authRouter)
-app.use("/api/user", userRouter)
-app.use("/api/interview" , interviewRouter)
-app.use("/api/payment" , paymentRouter)
+dotenv.config();
+console.log("Gemini Key:", process.env.GEMINI_API_KEY);
+const app = express();
 
-const PORT = process.env.PORT || 6000
-app.listen(PORT , ()=>{
-    console.log(`Server running on port ${PORT}`)
-    connectDb()
-})
+const allowedOrigins = [
+    "http://localhost:5173",
+    process.env.CLIENT_BASE_URL,
+];
+
+app.use(
+    cors({
+        origin: (origin, callback) => {
+            // Allow requests with no origin (Postman, mobile apps, etc.)
+            if (!origin) {
+                return callback(null, true);
+            }
+
+            if (allowedOrigins.includes(origin)) {
+                return callback(null, true);
+            }
+
+            return callback(new Error("Not allowed by CORS"));
+        },
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+    })
+);
+
+app.use(express.json());
+
+app.use("/api/auth", authRouter);
+app.use("/api/user", userRouter);
+app.use("/api/interview", interviewRouter);
+app.use("/api/payment", paymentRouter);
+
+const PORT = process.env.PORT || 6000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+    connectDb();
+});

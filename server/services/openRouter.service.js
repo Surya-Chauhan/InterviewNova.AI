@@ -1,33 +1,42 @@
-import axios from "axios"
+import axios from "axios";
 
-export const askAi = async (messages) => {
+const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
+
+export const askOpenRouter = async (messages) => {
     try {
-        if(!messages || !Array.isArray(messages) || messages.length === 0) {
+        if (!messages || !Array.isArray(messages) || messages.length === 0) {
             throw new Error("Messages array is empty.");
         }
-      
-        const response = await axios.post("https://openrouter.ai/api/v1/chat/completions",
+
+        const response = await axios.post(
+            OPENROUTER_URL,
             {
                 model: "nvidia/nemotron-3-super-120b-a12b:free",
-                messages: messages
-
+                messages,
             },
             {
-            headers: {
-            Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
-            'Content-Type': 'application/json',
-        },});
+                headers: {
+                    Authorization: `Bearer ${process.env.OPENROUTER_API_KEY}`,
+                    "Content-Type": "application/json",
+                },
+            }
+        );
 
         const content = response?.data?.choices?.[0]?.message?.content;
 
         if (!content || !content.trim()) {
-      throw new Error("AI returned empty response.");
-    }
+            throw new Error("OpenRouter returned an empty response.");
+        }
 
-    return content
+        console.log("✅ OpenRouter Success");
+
+        return content;
     } catch (error) {
-            console.error("OpenRouter Error:", error.response?.data || error.message);
-    throw new Error("OpenRouter API Error");
+        console.error(
+            "❌ OpenRouter:",
+            error.response?.data || error.message
+        );
 
+        throw error;
     }
-}
+};

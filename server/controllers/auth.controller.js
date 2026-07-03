@@ -1,41 +1,50 @@
-import genToken from "../config/token.js"
-import User from "../models/user.model.js"
+import genToken from "../config/token.js";
+import User from "../models/user.model.js";
 
-
-export const googleAuth = async (req,res) => {
+export const googleAuth = async (req, res) => {
     try {
-        const {name , email} = req.body
-        let user = await User.findOne({email})
-        if(!user){
+        const { name, email } = req.body;
+
+        let user = await User.findOne({ email });
+
+        if (!user) {
             user = await User.create({
-                name , 
-                email
-            })
+                name,
+                email,
+            });
         }
-        let token = await genToken(user._id)
-        res.cookie("token" , token , {
-            httpOnly:true,
-            secure: process.env.NODE_ENV === "production", // Set to true in production
-            sameSite: process.env.NODE_ENV === "production" ? "None" : "Lax", // Set to "None" in production for cross-site cookies
-            maxAge:7 * 24 * 60 * 60 * 1000
-        })
 
-        return res.status(200).json(user)
+        const token = await genToken(user._id);
 
-
+        return res.status(200).json({
+            success: true,
+            message: "Login successful",
+            token,
+            user,
+        });
 
     } catch (error) {
-        return res.status(500).json({message:`Google auth error ${error}`})
+        return res.status(500).json({
+            success: false,
+            message: `Google auth error: ${error.message}`,
+        });
     }
-    
-}
+};
 
-export const logOut = async (req,res) => {
+export const logOut = async (req, res) => {
     try {
-        await res.clearCookie("token")
-        return res.status(200).json({message:"LogOut Successfully"})
+        // No cookie to clear when using JWT in sessionStorage.
+        // The frontend will remove the token from sessionStorage.
+
+        return res.status(200).json({
+            success: true,
+            message: "Logged out successfully",
+        });
+
     } catch (error) {
-         return res.status(500).json({message:`Logout error ${error}`})
+        return res.status(500).json({
+            success: false,
+            message: `Logout error: ${error.message}`,
+        });
     }
-    
-}
+};
