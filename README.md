@@ -37,49 +37,49 @@
 </p>
 
 <p align="center">
-  <em>Modern landing page showcasing InterviewNova's AI-powered interview preparation platform.</em>
+  <em>Beautiful and responsive landing page introducing InterviewNova with AI-powered interview preparation, key features, and a modern user experience.</em>
 </p>
 
 <br><br>
 
 ---
 
-## 📊 Dashboard
+## 🎤 Live Interview
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/90029f55-d523-437d-83e7-44afdff2a3da" alt="InterviewNova Dashboard" width="100%">
+  <img src="https://github.com/user-attachments/assets/90029f55-d523-437d-83e7-44afdff2a3da" alt="Live Interview" width="100%">
 </p>
 
 <p align="center">
-  <em>Personalized dashboard to manage interviews, track progress, and access AI-powered insights.</em>
-</p>
-
-<br><br>
-
----
-
-## 🎤 AI Interview Session
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/f9dee55c-75e4-4cc4-bcfe-6ce3713262d4" alt="AI Interview Session" width="100%">
-</p>
-
-<p align="center">
-  <em>Interactive AI interview experience with role-specific questions and real-time responses.</em>
+  <em>Real-time AI interview session featuring role-specific questions, timer, and an interactive interview experience.</em>
 </p>
 
 <br><br>
 
 ---
 
-## 📈 AI Performance Report
+## 📊 Interview Analytics Dashboard
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/6e09743d-65b7-46ba-8c82-7f6699051ec4" alt="AI Performance Report" width="100%">
+  <img src="https://github.com/user-attachments/assets/f9dee55c-75e4-4cc4-bcfe-6ce3713262d4" alt="Interview Analytics Dashboard" width="100%">
 </p>
 
 <p align="center">
-  <em>Comprehensive AI-generated performance report with scores, strengths, and improvement suggestions.</em>
+  <em>Comprehensive analytics dashboard displaying interview performance, scores, progress tracking, and AI-generated insights.</em>
+</p>
+
+<br><br>
+
+---
+
+## 📜 Interview History
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6e09743d-65b7-46ba-8c82-7f6699051ec4" alt="Interview History" width="100%">
+</p>
+
+<p align="center">
+  <em>View, manage, and revisit all previous interview sessions along with detailed feedback and performance reports.</em>
 </p>
 
 <br><br>
@@ -93,15 +93,11 @@
 </p>
 
 <p align="center">
-  <em>Flexible credit-based pricing with secure payment integration for uninterrupted interview practice.</em>
+  <em>Flexible credit-based pricing plans with secure payment integration, allowing users to purchase credits for AI interview sessions.</em>
 </p>
 
 ---
 
-
-
-
----
 
 ## ✨ Features
 
