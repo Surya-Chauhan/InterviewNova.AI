@@ -1,5 +1,6 @@
 import React from 'react'
 import { motion } from "motion/react"
+import {toast} from "sonner";
 import {
     FaUserTie,
     FaBriefcase,
@@ -55,21 +56,44 @@ function Step1SetUp({ onStart }) {
     }
 
     const handleStart = async () => {
-        setLoading(true)
-        try {
-           const result = await api.post( "/api/interview/generate-questions" , {role, experience, mode , resumeText, projects, skills } ) 
-           console.log(result.data)
-           if(userData){
-            dispatch(setUserData({...userData , credits:result.data.creditsLeft}))
-           }
-           setLoading(false)
-           onStart(result.data)
+    setLoading(true);
 
-        } catch (error) {
-            console.log(error)
-            setLoading(false)
+    try {
+        const result = await api.post(
+            "/api/interview/generate-questions",
+            { role, experience, mode, resumeText, projects, skills }
+        );
+
+        // success toast
+        toast.success("Interview started successfully 🚀");
+
+        // update credits in redux (IMPORTANT FIX)
+        if (userData) {
+            dispatch(
+                setUserData({
+                    ...userData,
+                    credits: result.data.creditsLeft,
+                })
+            );
         }
+
+        onStart(result.data);
+    } catch (error) {
+        const message = error.response?.data?.message;
+
+        // 🔥 show backend error (credits issue will come here)
+        toast.error(message || "Failed to start interview");
+
+        // optional UX improvement: redirect to pricing
+        if (message?.includes("credits")) {
+            setTimeout(() => {
+                window.location.href = "/pricing";
+            }, 1200);
+        }
+    } finally {
+        setLoading(false);
     }
+};
     return (
         <motion.div
             initial={{ opacity: 0 }}

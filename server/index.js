@@ -10,7 +10,7 @@ import interviewRouter from "./routes/interview.route.js";
 import paymentRouter from "./routes/payment.route.js";
 
 dotenv.config();
-console.log("Gemini Key:", process.env.GEMINI_API_KEY);
+
 const app = express();
 
 const allowedOrigins = [

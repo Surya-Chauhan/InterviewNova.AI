@@ -3,6 +3,7 @@ import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs";
 import { askAi } from "../services/ai.service.js";
 import User from "../models/user.model.js";
 import Interview from "../models/interview.model.js";
+import { parseAIJson } from "../utils/jsonParser.js";
 
 export const analyzeResume = async (req, res) => {
   try {
@@ -38,7 +39,13 @@ export const analyzeResume = async (req, res) => {
         content: `
 Extract structured data from resume.
 
-Return strictly JSON:
+Return ONLY valid JSON.
+
+Do not use markdown.
+Do not wrap the response in a code block.
+Do not explain anything.
+
+Return exactly:
 
 {
   "role": "string",
@@ -57,7 +64,7 @@ Return strictly JSON:
 
     const aiResponse = await askAi(messages)
 
-    const parsed = JSON.parse(aiResponse);
+    const parsed = parseAIJson(aiResponse);
 
     fs.unlinkSync(filepath)
 
@@ -290,7 +297,13 @@ Feedback Rules:
 - Do NOT explain scoring.
 - Keep tone professional and honest.
 
-Return ONLY valid JSON in this format:
+Return ONLY valid JSON.
+
+Do not use markdown.
+Do not wrap the response in a code block.
+Do not explain anything.
+
+Return exactly:
 
 {
   "confidence": number,
@@ -315,7 +328,7 @@ Answer: ${answer}
     const aiResponse = await askAi(messages)
 
 
-    const parsed = JSON.parse(aiResponse);
+    const parsed = parseAIJson(aiResponse);
 
     question.answer = answer;
     question.confidence = parsed.confidence;

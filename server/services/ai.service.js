@@ -1,25 +1,24 @@
-import { askGemini } from "./gemini.service.js";
+import { askGroq } from "./groq.service.js";
 import { askOpenRouter } from "./openRouter.service.js";
 
 export const askAi = async (messages) => {
-    // Try Gemini first
-    try {
-        console.log("🚀 Trying Gemini...");
-        return await askGemini(messages);
-    } catch (geminiError) {
-        console.error("❌ Gemini Failed:", geminiError.message);
-    }
+  try {
+    console.log("🚀 Trying Groq...");
 
-    // Fallback to OpenRouter
-    try {
-        console.log("🚀 Falling back to OpenRouter...");
-        return await askOpenRouter(messages);
-    } catch (openRouterError) {
-        console.error("❌ OpenRouter Failed:", openRouterError.message);
-    }
+    const result = await askGroq(messages);
 
-    // Both providers failed
-    throw new Error(
-        "All AI providers are currently unavailable. Please try again later."
-    );
+    console.log("✅ Groq Success");
+
+    return result;
+  } catch (err) {
+    console.error("❌ Groq Failed:", err.message);
+
+    console.log("🚀 Falling back to OpenRouter...");
+
+    const result = await askOpenRouter(messages);
+
+    console.log("✅ OpenRouter Success");
+
+    return result;
+  }
 };
