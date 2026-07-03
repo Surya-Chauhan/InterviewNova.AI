@@ -5,9 +5,9 @@
 <p><strong>AI-Powered Mock Interview Platform for Students & Job Seekers</strong></p>
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Now-4F46E5?style=for-the-badge)](https://interviewnova-client.onrender.com)
-[![GitHub Stars](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova?style=for-the-badge&logo=github&color=FFD700)](https://github.com/Surya-Chauhan/InterviewNova/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/Surya-Chauhan/InterviewNova?style=for-the-badge&logo=github&color=0EA5E9)](https://github.com/Surya-Chauhan/InterviewNova/network/members)
-[![License](https://img.shields.io/github/license/Surya-Chauhan/InterviewNova?style=for-the-badge&color=22C55E)](https://github.com/Surya-Chauhan/InterviewNova/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&logo=github&color=FFD700)](https://github.com/Surya-Chauhan/InterviewNova.AI/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&logo=github&color=0EA5E9)](https://github.com/Surya-Chauhan/InterviewNova.AI/network/members)
+[![License](https://img.shields.io/github/license/Surya-Chauhan/InterviewNova.AI?style=for-the-badge&color=22C55E)](https://github.com/Surya-Chauhan/InterviewNova.AI/blob/main/LICENSE)
 
 <br/>
 
@@ -242,7 +242,7 @@ InterviewNova/
 
 ### ⭐ If this project helped you, give it a star — it means a lot!
 
-[![Star this repo](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova?style=social)](https://github.com/Surya-Chauhan/InterviewNova)
+[![Star this repo](https://img.shields.io/github/stars/Surya-Chauhan/InterviewNova.AI?style=social)](https://github.com/Surya-Chauhan/InterviewNova.AI)
 
 _Built with ❤️ by Surya Pratap Singh_
 
