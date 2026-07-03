@@ -232,7 +232,7 @@ InterviewNova/
 
 💼 Full Stack + AI Developer
 
-[![GitHub](https://img.shields.io/badge/GitHub-Surya-Chauhan-181717?style=for-the-badge&logo=github)](https://github.com/Surya-Chauhan)
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github)](https://github.com/Surya-Chauhan)
 
 </div>
 
