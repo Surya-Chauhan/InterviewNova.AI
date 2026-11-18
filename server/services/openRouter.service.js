@@ -11,7 +11,7 @@ export const askOpenRouter = async (messages) => {
         const response = await axios.post(
             OPENROUTER_URL,
             {
-                model: "nvidia/nemotron-3-super-120b-a12b:free",
+                model: "openrouter/free",
                 messages,
             },
             {
